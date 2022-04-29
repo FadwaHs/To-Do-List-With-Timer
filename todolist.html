@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">   
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>To Do List</title>
+    <link rel="stylesheet" type="text/css" href="todolist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head> 
+<body>
+	
+	<header>
+		<h1> 
+			<i class="fa fa-check-square" style="color:#1e90ff; font-size:30px"></i>
+              To Do List - with StopWatch
+		</h1>
+
+		<form id="new-task-form1">
+			<input 
+				type="text" 
+				name="new-task-input" 
+				id="new-task-input" 
+				placeholder="Add New Task Here....." />
+		</form>
+
+        <div class="Priority">
+		<p>Set Priority</p><br>
+
+        <input type="radio" name="rgPrior" value="hi" id="rgPrior_0"/> High<br/><br>
+        <input type="radio" name="rgPrior" value="med" id="rgPrior_1"/> Medium<br/><br>
+        <input type="radio" name="rgPrior" value="low" id="rgPrior_2"/> Low<br/><br>
+        <input type="radio" name="rgPrior" value="none" id="rgPrior_3"/> None<br/>
+
+        </div>
+
+	</header>
+	<main>
+		<section class="task-list">
+			
+          <form id="new-task-form">
+			<input 
+				type="submit"
+				id="new-task-submit" 
+				value="Add task" />
+          </form>
+
+			<div id="tasks">
+
+				 	<!--
+         			 <div class="task">
+
+  					 <div class="content">
+  					 	 <button class="openbtn" > ☰ </button> 
+						<input 
+							type="text" 
+							class="text" 
+							value="A new task"
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="edit">Edit</button>
+						<button class="delete">Delete</button>
+						<button class="done">Done</button>
+
+                 
+					</div>
+				</div> -->
+
+			</div>
+
+			<div id="mySidebar" class="sidebar">
+                
+                <p>Notes</p>
+                <textarea id="area" rows="4" cols="50" style=" border:solid 2px white; background-color:var(--darkest); color: white; margin: 10px;">
+  
+              </textarea>
+             </div>
+		</section>
+	</main>
+
+	<script src="todolist.js"> </script>
+	
+</body>
+</html>
